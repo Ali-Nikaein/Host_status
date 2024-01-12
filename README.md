@@ -5,17 +5,21 @@ A simple program to check the online or offline status of a host using C and Win
 
 ### Usage :
 1.Download or clone the code:
-  ####   <span style="color: blue;">git  clone https://github.com/Ali-Nikaein/Host_status_checker.git</span>
-
+  ```
+  ####   git  clone https://github.com/Ali-Nikaein/Host_status_checker.git
+  ```
 2.Open the network_status.c file using a text editor (e.g., Visual Studio Code or Notepad++).
 
 3.Edit the target IP address and desired port in the main.c file:
+  ```
   ####   'char *address = "127.0.0.1";'
   ####   'int port = 445;'
-
+  ```
 4.compile and Run the program:
+  ```
   ####   gcc  network_status.c  -o  host_checker  -lws2_32
   ####   ./host_checker
+  ```
 
 ### Result :
 If the program runs successfully, it will display the result of the host status check.
@@ -25,6 +29,7 @@ If the host is offline or the connection fails:
   ####   Host is offline.
   ####   Or you may have entered a closed or wrong port number.
 
+The background color is `#ffffff` for light mode and `#000000` for dark mode.
 
 ## solution 2 :
 This program is designed to check the online or offline status of a host using Internet Control Message Protocol (ICMP). Unlike the previous code, which attempted to establish a connection with a specific port, this solution utilizes ICMP to determine the host's status.
