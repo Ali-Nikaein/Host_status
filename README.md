@@ -5,13 +5,13 @@ A simple program to check the online or offline status of a host using C and Win
 
 ### Usage :
 1.Download or clone the code:
-  ####   git  clone https://github.com/Ali-Nikaein/Host_status_checker.git
+  ####   <span style="color: blue;">git  clone https://github.com/Ali-Nikaein/Host_status_checker.git</span>
 
 2.Open the network_status.c file using a text editor (e.g., Visual Studio Code or Notepad++).
 
 3.Edit the target IP address and desired port in the main.c file:
-  ####   char *address = "127.0.0.1";
-  ####   int port = 445;
+  ####   'char *address = "127.0.0.1";'
+  ####   'int port = 445;'
 
 4.compile and Run the program:
   ####   gcc  network_status.c  -o  host_checker  -lws2_32
@@ -33,15 +33,15 @@ This program is designed to check the online or offline status of a host using I
 The primary purpose of this code is to provide an alternative method for checking the network status of a specified host. It sends ICMP Echo Requests and waits for Echo Replies to assess whether the host is online or offline.
 
 ### How to Use :
-1. Download or clone the code:
+1.Download or clone the code:
   ####   git  clone https://github.com/Ali-Nikaein/Host_status_checker.git
   
-2. Open the ping_icmp.c file using a text editor (e.g., Visual Studio Code or Notepad++).
+2.Open the ping_icmp.c file using a text editor (e.g., Visual Studio Code or Notepad++).
    
-3. Modify the target hostname in the main.c file:
+3.Modify the target hostname in the main.c file:
   ####   const char *hostname = "soft98.ir";
 
-4. Run the program:
+4.Run the program:
   ####   gcc  ping_icmp.c  -o  network_status_checker  -lws2_32
   ####   ./network_status_checker
 
