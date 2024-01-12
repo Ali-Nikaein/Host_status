@@ -6,19 +6,19 @@ A simple program to check the online or offline status of a host using C and Win
 ### Usage :
 1.Download or clone the code:
   ```
-  ####   git  clone https://github.com/Ali-Nikaein/Host_status_checker.git
+  git  clone https://github.com/Ali-Nikaein/Host_status_checker.git
   ```
 2.Open the network_status.c file using a text editor (e.g., Visual Studio Code or Notepad++).
 
 3.Edit the target IP address and desired port in the main.c file:
   ```
-  ####   'char *address = "127.0.0.1";'
-  ####   'int port = 445;'
+  char *address = "127.0.0.1";
+  int port = 445;
   ```
 4.compile and Run the program:
   ```
-  ####   gcc  network_status.c  -o  host_checker  -lws2_32
-  ####   ./host_checker
+  gcc  network_status.c  -o  host_checker  -lws2_32
+  host_checker
   ```
 
 ### Result :
@@ -29,7 +29,7 @@ If the host is offline or the connection fails:
   ####   Host is offline.
   ####   Or you may have entered a closed or wrong port number.
 
-The background color is `#ffffff` for light mode and `#000000` for dark mode.
+
 
 ## solution 2 :
 This program is designed to check the online or offline status of a host using Internet Control Message Protocol (ICMP). Unlike the previous code, which attempted to establish a connection with a specific port, this solution utilizes ICMP to determine the host's status.
@@ -39,16 +39,22 @@ The primary purpose of this code is to provide an alternative method for checkin
 
 ### How to Use :
 1.Download or clone the code:
-  ####   git  clone https://github.com/Ali-Nikaein/Host_status_checker.git
+  ```
+  git  clone https://github.com/Ali-Nikaein/Host_status_checker.git
+  ```
   
 2.Open the ping_icmp.c file using a text editor (e.g., Visual Studio Code or Notepad++).
    
 3.Modify the target hostname in the main.c file:
-  ####   const char *hostname = "soft98.ir";
+  ```
+  const char *hostname = "soft98.ir";
+  ```
 
 4.Run the program:
-  ####   gcc  ping_icmp.c  -o  network_status_checker  -lws2_32
-  ####   ./network_status_checker
+  ```
+  gcc  ping_icmp.c  -o  network_status_checker  -lws2_32
+  ./network_status_checker
+  ```
 
 ### Result :
 ![Screenshot 2024-01-12 121326](https://github.com/Ali-Nikaein/Host_status_checker/assets/108432369/2e36f9c6-4fca-4db7-a9cc-3f49c3c8fca5)
